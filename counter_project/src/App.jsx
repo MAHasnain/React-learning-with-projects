@@ -1,14 +1,21 @@
-import { useState } from 'react'  /// useState se 2 values mmilti array k format me
+import { useState } from 'react'  /// useState se 2 values milti array k format me
 
 import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(50);
+  let [counter, setCounter] = useState(15);
   // let counter = 0;
 
   const addValue = () => {
     setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
     console.log("clicked")
   }
 
