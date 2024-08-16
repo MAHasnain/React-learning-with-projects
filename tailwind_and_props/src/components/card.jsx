@@ -1,13 +1,15 @@
 import React from 'react'
 
-function Card(props) {
+function Card({mainHeading, buttonTxt}) {
+    console.log(mainHeading)
+    console.log(buttonTxt)
     return (
         <>
-            <div class="mx-auto max-w-7xl px-2 py-2 lg:px-0">
+            <div class="bg-white x-auto max-w-7xl px-2 py-2 lg:px-0">
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                     <div class="w-full md:w-2/3 lg:w-1/2">
                         <h2 class="text-3xl font-bold text-black">
-                            Sign up for our weekly newsletter
+                            {mainHeading}
                         </h2>
                         <p class="mt-4 text-gray-600">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
@@ -108,7 +110,7 @@ function Card(props) {
                                     type="button"
                                     class="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                                 >
-                                    Subscribe
+                                    {buttonTxt}
                                 </button>
                             </div>
                         </form>
