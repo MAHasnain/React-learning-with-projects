@@ -8,16 +8,20 @@ import RTE from "./RTE.jsx";
 import Select from "./Select.jsx";
 import Signup from "./Signup.jsx";
 import PostForm from "./PostForm/PostForm.jsx";
+import PostCards from "./PostCards.jsx";
+import Protected from "./AuthLayout.jsx";
 
 export {
+  Protected,
+  Container,
+  PostCards,
   PostForm,
   Signup,
-  Select,
   Input,
   Button,
-  Container,
-  Footer,
   Header,
+  Footer,
+  Select,
   Logo,
   RTE,
 };
