@@ -4,6 +4,20 @@ import Header from "./Header/Header.jsx";
 import Logo from "./Logo.jsx";
 import Button from "./Button.jsx";
 import Input from "./Input.jsx";
-import { RTE } from "./RTE.jsx";
+import RTE from "./RTE.jsx";
+import Select from "./Select.jsx";
+import Signup from "./Signup.jsx";
+import PostForm from "./PostForm/PostForm.jsx";
 
-export { Input, Button, Container, Footer, Header, Logo, RTE };
+export {
+  PostForm,
+  Signup,
+  Select,
+  Input,
+  Button,
+  Container,
+  Footer,
+  Header,
+  Logo,
+  RTE,
+};
