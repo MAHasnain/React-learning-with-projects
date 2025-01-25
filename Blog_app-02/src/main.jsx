@@ -6,8 +6,8 @@ import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import { Protected as AuthLayout } from "./components";
-import Login from "./pages/Login.jsx";
+import { Protected, Login } from "./components";
+// import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import AllPosts from "./pages/AllPosts.jsx";
 import AddPost from "./pages/AddPost.jsx";
@@ -26,44 +26,44 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: (
-          <AuthLayout authentication={false}>
+          <Protected authentication={false}>
             <Login />
-          </AuthLayout>
+          </Protected>
         ),
       },
       {
         path: "/signup",
         element: (
-          <AuthLayout authentication={false}>
+          <Protected authentication={false}>
             <Signup />
-          </AuthLayout>
+          </Protected>
         ),
       },
       {
         path: "/all-posts",
         element: (
-          <AuthLayout authentication>
+          <Protected authentication>
             {" "}
             <AllPosts />
-          </AuthLayout>
+          </Protected>
         ),
       },
       {
         path: "/add-post",
         element: (
-          <AuthLayout authentication>
+          <Protected authentication>
             {" "}
             <AddPost />
-          </AuthLayout>
+          </Protected>
         ),
       },
       {
         path: "/edit-post/:slug",
         element: (
-          <AuthLayout authentication>
+          <Protected authentication>
             {" "}
             <EditPost />
-          </AuthLayout>
+          </Protected>
         ),
       },
       {
