@@ -11,19 +11,21 @@ import Login from "./Login.jsx";
 import PostForm from "./postForm/PostForm.jsx";
 import PostCards from "./PostCards.jsx";
 import Protected from "./AuthLayout.jsx";
+import LogoutBtn from "./Header/LogoutBtn.jsx";
 
 export {
-  Login,
+  LogoutBtn,
   Protected,
   Container,
   PostCards,
   PostForm,
-  Signup,
-  Input,
   Button,
   Header,
   Footer,
   Select,
+  Signup,
+  Login,
+  Input,
   Logo,
   RTE,
 };
