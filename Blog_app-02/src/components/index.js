@@ -7,11 +7,13 @@ import Input from "./Input.jsx";
 import RTE from "./RTE.jsx";
 import Select from "./Select.jsx";
 import Signup from "./Signup.jsx";
-import PostForm from "./PostForm/PostForm.jsx";
+import Login from "./Login.jsx";
+import PostForm from "./postForm/PostForm.jsx";
 import PostCards from "./PostCards.jsx";
 import Protected from "./AuthLayout.jsx";
 
 export {
+  Login,
   Protected,
   Container,
   PostCards,
