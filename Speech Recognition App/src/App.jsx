@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="p-10 items-center drop-shadow-lg shadow-lg rounded-2xl m-1 w-auto">
       <h1 className="text-4xl text-center">Speech Recognition App</h1>
-      <div className="w-10 h-20" onClick={() => setCopyText(transcript)}>
+      <div className="h-20" onClick={() => setCopyText(transcript)}>
         {transcript}
       </div>
 
